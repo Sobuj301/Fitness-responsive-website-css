@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MonteCarlo&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.header {
+    background: radial-gradient(circle, #111111, rgba(119, 119, 119, 0));
+}
+
+/* share style implement */
+
+.primary-btn {
+    background-color: #E6533C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    ;
+
+}
+
+
+/* Navbar Design Implement */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navbar .logo {
+    width: 30%;
+    color: #E6533C;
+    font-weight: 800;
+    font-size: 2rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .menu {
+    width: 30%;
+    display: none;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+
+.navbar .nav-links {
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav-links li {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.nav-links li>#special {
+    background-color: #E6533C;
+    border-radius: 2rem;
+    padding: 5px 15px;
+}
+
+/* banner design implement */
+
+.banner {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner .banner-text {
+    padding: 50px;
+}
+
+.banner .banner-text h3 {
+    font-weight: 800;
+    font-size: 5rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner .banner-text p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 16px 0px 16px 0px;
+}
+
+.banner .banner-text .italic {
+    font-family: "MonteCarlo";
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.download-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.banner .banner-img img {
+    width: 100%;
+}
+
+.banner .banner-img {
+    position: relative;
+    left: auto;
+}
+
+.banner .banner-img .workout-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    position: absolute;
+    top: 130px;
+    right: -100px;
+    border-radius: 10px;
+}
+
+.banner .banner-img .video-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    position: absolute;
+    bottom: 70px;
+    left: -100px;
+    border-radius: 10px;
+}
+
+.banner .banner-img .video-card .square {
+    background-color: #E6533C;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:576px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        width: 100%;
+
+    }
+
+    .navbar .menu {
+        display: block;
+        width: 100%;
+        text-align: end;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+
+    }
+
+    .banner {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .banner .banner-img .workout-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 15px 15px;
+        border-radius: 10px;
+        position: absolute;
+        top: 60px;
+        right: -30px;
+    }
+
+    .banner .banner-img .video-card {
+        padding: 15px 20px;
+        position: absolute;
+        left: -20px;
+        gap: 10px;
+        bottom: 150px;
+    }
+
+    .banner .banner-text {
+        padding: 30px;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar .logo {
+        width: 100%;
+
+    }
+
+    .navbar .nav-links {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 2rem;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .banner {
+        margin-top: 10px;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .banner .banner-text h3 {
+        font-size: 7rem;
+    }
+
+    .banner .banner-img .workout-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 25px 35px;
+        border-radius: 10px;
+        position: absolute;
+        top: 70px;
+        right: -80px;
+    }
+
+    .banner .banner-img .video-card {
+        padding: 25px 30px;
+        position: absolute;
+        left: -50px;
+        gap: 10px;
+        bottom: 100px;
+    }
+
+    .banner .banner-text {
+        padding: 20px 100px 20px 100px;
+        width: 100%;
+
+    }
+
+}
+
+.border {
+    border: 1px solid red;
+}

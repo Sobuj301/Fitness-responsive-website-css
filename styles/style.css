@@ -15,6 +15,7 @@ body {
 .container {
     max-width: 1300px;
     margin: 0px auto;
+    border: 2px solid red;
 }
 
 .header {
@@ -31,8 +32,29 @@ body {
     outline: none;
     border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    ;
+}
 
+.section-heading {
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.section-heading * {
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
 }
 
 
@@ -147,6 +169,7 @@ body {
 .banner .banner-img {
     position: relative;
     left: auto;
+    bottom: 0;
 }
 
 .banner .banner-img .workout-card {
@@ -175,6 +198,37 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+/* habit container design implement */
+
+.habit-container {
+    padding: 40px;
+}
+
+.img-box {
+    width: 250px;
+    text-align: center;
+}
+
+.habit-container .section-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 105px 0px 105px;
+}
+
+.habit-container .section-content img {
+    border-radius: 50%;
+}
+
+.section-content h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
 
@@ -226,12 +280,57 @@ body {
         padding: 30px;
     }
 
+    .habit-container {
+        margin-top: 20px;
+    }
+
+    .section-heading {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-heading * {
+        margin-bottom: 8px;
+    }
+
+    .section-title {
+        font-weight: 800;
+        font-size: 2rem;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .section-description {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .img-box {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .habit-container .section-content {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+        gap: 50px;
+    }
+
+
+
+    .section-content h2 {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
     .navbar {
         justify-content: center;
     }
+
     .navbar .logo {
         width: 100%;
 
@@ -282,8 +381,17 @@ body {
 
     }
 
-}
+    .img-box {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0px 50px;
+    }
 
-.border {
-    border: 1px solid red;
+    .habit-container .section-content {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 0px;
+    }
 }

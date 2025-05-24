@@ -5,6 +5,8 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -15,7 +17,6 @@ body {
 .container {
     max-width: 1300px;
     margin: 0px auto;
-    border: 2px solid red;
 }
 
 .header {
@@ -97,12 +98,10 @@ body {
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #FFFFFF;
 }
 
 .nav-links li {
-    list-style-type: none;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -484,6 +483,94 @@ tr {
     text-align: center;
 }
 
+.team-container {
+    padding: 50px;
+}
+
+.team-img {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team-img .card {
+    position: relative;
+}
+
+.team-img .card .img-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.team-img .card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+
+}
+
+.footer h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: white;
+}
+
+.footer li {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+}
+
+.footer .brand * {
+    margin-bottom: 8px;
+}
+
+.footer .quick-link * {
+    margin-bottom: 8px;
+}
+
+.footer .footer-link * {
+    margin-bottom: 8px;
+}
+
+.footer .brand .brand-name {
+    color: #E6533C;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.footer .copy-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width:576px) {
     .navbar {
         justify-content: space-between;
@@ -682,6 +769,26 @@ tr {
     caption {
         margin-bottom: 30px;
     }
+
+    .team-container {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .team-img {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px 0px 0px 0px;
+    }
+
+    .footer {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 50px;
+
+    }
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -814,5 +921,14 @@ tr {
     .calculator-content {
         gap: 0px;
         padding: 20px;
+    }
+
+    .team-container {
+        padding: 50px;
+    }
+
+    .team-img {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 0px 0px 0px;
     }
 }
